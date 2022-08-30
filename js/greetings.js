@@ -6,7 +6,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
-  event.preventDefault();
+  event.preventDefault(); // submit의 기본동작인 페이지 새로고침 X
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
