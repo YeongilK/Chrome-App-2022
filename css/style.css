@@ -1,3 +1,50 @@
 .hidden {
   display: none;
 }
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-top: 50px;
+}
+
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
