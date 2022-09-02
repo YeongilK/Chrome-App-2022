@@ -49,7 +49,18 @@ const quotes = [
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
+function handleMouseOver() {
+  author.classList.remove(HIDDEN_CLASSNAME);
+}
+
+function handleMouseOut() {
+  author.classList.add(HIDDEN_CLASSNAME);
+}
+
 todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
+
+quote.addEventListener("mouseover", handleMouseOver);
+quote.addEventListener("mouseout", handleMouseOut);
